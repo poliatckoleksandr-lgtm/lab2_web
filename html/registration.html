@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TimeTracker — Реєстрація</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding-top: 56px; }
+    footer { background: #f8f9fa; padding: 1rem 0; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../workspace.html">TimeTracker</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../workspace.html">Головна сторінка</a></li>
+          <li class="nav-item active"><a class="nav-link" href="registration.html">Реєстрація</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Вхід</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Профіль</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Про додаток</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4" id="main">
+    <h1 class="mb-4">Реєстрація користувача</h1>
+    <form id="registrationForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Ім'я *</label>
+        <input type="text" class="form-control" id="name" name="name" required placeholder="Введіть ім'я">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email *</label>
+        <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Пароль *</label>
+        <input type="password" class="form-control" id="password" name="password" required placeholder="Введіть пароль">
+      </div>
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Підтвердіть пароль *</label>
+        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required placeholder="Підтвердіть пароль">
+      </div>
+      <div class="mb-3">
+        <label for="gender" class="form-label">Стать</label>
+        <select class="form-select" id="gender" name="gender">
+          <option value="">Оберіть стать</option>
+          <option value="Чоловіча">Чоловіча</option>
+          <option value="Жіноча">Жіноча</option>
+          <option value="Інша">Інша</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="dateOfBirth" class="form-label">Дата народження</label>
+        <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth">
+      </div>
+      <button type="submit" class="btn btn-primary">Зареєструватися</button>
+      <a href="login.html" class="btn btn-link">Вже маєте акаунт? Увійти</a>
+    </form>
+  </main>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2025 TimeTracker. Усі права захищено.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/model.js"></script>
+  <script src="../js/view.js"></script>
+  <script src="../js/controller.js"></script>
+</body>
+</html>
